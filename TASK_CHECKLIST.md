@@ -10,21 +10,21 @@
 ## ✅ DONE
 
 ### Backend
-- [x] Setup Spring Boot Project - Commit: `951c337`
-- [x] Database Configuration (MySQL) - Commit: `951c337`
-- [x] User Entity & Repository - Commit: `951c337`
-- [x] JWT Security Implementation - Commit: `951c337`
-- [x] Authentication Endpoints (Register, Login, Get User) - Commit: `951c337`
+- [x] Setup Spring Boot Project - Commit: `86ce3f8`
+- [x] Database Configuration (MySQL) - Commit: `86ce3f8`
+- [x] User Entity & Repository - Commit: `86ce3f8`
+- [x] JWT Security Implementation - Commit: `86ce3f8`
+- [x] Authentication Endpoints (Register, Login, Get User) - Commit: `86ce3f8`
 
 ### Web Application
-- [x] Setup React + Vite Project - Commit: `951c337`
-- [x] Authentication Service & Context - Commit: `951c337`
-- [x] Protected Route Component - Commit: `951c337`
-- [x] **Register Page** - Commit: `951c337`
-- [x] **Login Page** - Commit: `951c337`
-- [x] **Dashboard/Profile Page** - Commit: `951c337`
-- [x] **Logout Functionality** - Commit: `951c337`
-- [x] React Router Setup - Commit: `951c337`
+- [x] Setup React + Vite Project - Commit: `86ce3f8`
+- [x] Authentication Service & Context - Commit: `86ce3f8`
+- [x] Protected Route Component - Commit: `86ce3f8`
+- [x] **Register Page** - Commit: `86ce3f8`
+- [x] **Login Page** - Commit: `86ce3f8`
+- [x] **Dashboard/Profile Page** - Commit: `86ce3f8`
+- [x] **Logout Functionality** - Commit: `86ce3f8`
+- [x] React Router Setup - Commit: `86ce3f8`
 
 ---
 
