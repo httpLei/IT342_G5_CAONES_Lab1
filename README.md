@@ -27,7 +27,7 @@ This repository contains the implementation of the User Registration and Authent
 - ✅ User Login with JWT authentication
 - ✅ Password encryption using BCrypt
 - ✅ Protected API endpoints
-- ✅ MySQL database integration
+- ✅ Supabase database integration
 - ✅ RESTful API design
 
 ### Web Application (React)
@@ -47,7 +47,7 @@ This repository contains the implementation of the User Registration and Authent
 - **Java:** 17
 - **Framework:** Spring Boot 3.2.0
 - **Security:** Spring Security + JWT
-- **Database:** MySQL 8.0
+- **Database:** Supabase
 - **ORM:** Spring Data JPA / Hibernate
 - **Build Tool:** Maven
 - **Password Encryption:** BCrypt
