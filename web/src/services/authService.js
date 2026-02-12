@@ -52,6 +52,11 @@ export const authService = {
     return response.data;
   },
 
+  updateMonthlyBudget: async (monthlyBudget) => {
+    const response = await api.put('/user/budget', { monthlyBudget });
+    return response.data;
+  },
+
   getStoredUser: () => {
     const user = localStorage.getItem('user');
     return user ? JSON.parse(user) : null;

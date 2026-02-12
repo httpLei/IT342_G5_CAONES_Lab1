@@ -1,4 +1,4 @@
-# BudTrip Web App - Setup Guide
+# WorthIt Web App - Setup Guide
 
 ## Prerequisites
 - Node.js 18+ and npm
