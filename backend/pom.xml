@@ -12,11 +12,11 @@
         <relativePath/>
     </parent>
     
-    <groupId>com.budtrip</groupId>
-    <artifactId>budtrip-backend</artifactId>
+    <groupId>com.worthit</groupId>
+    <artifactId>worthit-backend</artifactId>
     <version>1.0.0</version>
-    <name>BudTrip Backend</name>
-    <description>Backend API for BudTrip Authentication System</description>
+    <name>WorthIt Backend</name>
+    <description>Backend API for WorthIt Authentication System</description>
     
     <properties>
         <java.version>17</java.version>

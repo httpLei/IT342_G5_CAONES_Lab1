@@ -1,7 +1,7 @@
-package com.budtrip.config;
+package com.worthit.config;
 
-import com.budtrip.security.JwtAuthenticationFilter;
-import com.budtrip.security.UserDetailsServiceImpl;
+import com.worthit.security.JwtAuthenticationFilter;
+import com.worthit.security.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

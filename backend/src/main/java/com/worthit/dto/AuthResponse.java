@@ -1,4 +1,4 @@
-package com.budtrip.dto;
+package com.worthit.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

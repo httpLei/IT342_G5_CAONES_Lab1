@@ -1,10 +1,10 @@
-# BudTrip - User Registration & Authentication System
+# WorthIt - User Registration & Authentication System
 
 **IT342 Software Integration and Architecture - Lab 1**
 
-BudTrip is a cross-platform budgeting tool (Web + Mobile) designed to prevent "tracking burnout." By separating expenses into Needs and Wants and applying intelligent filtering to discretionary spending, BudTrip helps users understand their "Cost of Existence" vs. their "Lifestyle Cost."
+WorthIt is a cross-platform budgeting tool (Web + Mobile) designed to prevent "tracking burnout." By separating expenses into Needs and Wants and applying intelligent filtering to discretionary spending, WorthIt helps users understand their "Cost of Existence" vs. their "Lifestyle Cost."
 
-This repository contains the implementation of the User Registration and Authentication System for BudTrip.
+This repository contains the implementation of the User Registration and Authentication System for WorthIt.
 
 ---
 
@@ -64,11 +64,11 @@ This repository contains the implementation of the User Registration and Authent
 ## 📁 Project Structure
 
 ```
-BudTrip/
+WorthIt/
 ├── backend/                    # Spring Boot backend
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── java/com/budtrip/
+│   │   │   ├── java/com/worthit/
 │   │   │   │   ├── config/           # Security & CORS config
 │   │   │   │   ├── controller/       # REST controllers
 │   │   │   │   ├── dto/              # Data transfer objects
@@ -100,7 +100,7 @@ BudTrip/
 │
 ├── mobile/                     # React Native app (Lab 2)
 ├── docs/                       # Documentation
-│   └── FRS_BudTrip.pdf
+│   └── FRS_WorthIt.pdf
 ├── README.md
 └── TASK_CHECKLIST.md
 ```

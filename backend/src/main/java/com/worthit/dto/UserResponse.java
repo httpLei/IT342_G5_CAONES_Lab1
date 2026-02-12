@@ -1,4 +1,4 @@
-package com.budtrip.dto;
+package com.worthit.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,5 +13,6 @@ public class UserResponse {
     private String email;
     private String displayName;
     private String role;
+    private Double monthlyBudget;
     private LocalDateTime createdAt;
 }

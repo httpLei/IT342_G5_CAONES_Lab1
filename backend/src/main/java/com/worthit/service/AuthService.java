@@ -1,12 +1,12 @@
-package com.budtrip.service;
+package com.worthit.service;
 
-import com.budtrip.dto.LoginRequest;
-import com.budtrip.dto.RegisterRequest;
-import com.budtrip.dto.AuthResponse;
-import com.budtrip.dto.UserResponse;
-import com.budtrip.model.User;
-import com.budtrip.repository.UserRepository;
-import com.budtrip.security.JwtUtils;
+import com.worthit.dto.LoginRequest;
+import com.worthit.dto.RegisterRequest;
+import com.worthit.dto.AuthResponse;
+import com.worthit.dto.UserResponse;
+import com.worthit.model.User;
+import com.worthit.repository.UserRepository;
+import com.worthit.security.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -88,7 +88,26 @@ public class AuthService {
             user.getEmail(),
             user.getDisplayName(),
             user.getRole(),
+            user.getMonthlyBudget(),
             user.getCreatedAt()
+        );
+    }
+    
+    public UserResponse updateMonthlyBudget(String username, Double monthlyBudget) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+        
+        user.setMonthlyBudget(monthlyBudget);
+        User updatedUser = userRepository.save(user);
+        
+        return new UserResponse(
+            updatedUser.getId(),
+            updatedUser.getUsername(),
+            updatedUser.getEmail(),
+            updatedUser.getDisplayName(),
+            updatedUser.getRole(),
+            updatedUser.getMonthlyBudget(),
+            updatedUser.getCreatedAt()
         );
     }
 }

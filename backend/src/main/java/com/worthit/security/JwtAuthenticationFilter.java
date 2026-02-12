@@ -1,4 +1,4 @@
-package com.budtrip.security;
+package com.worthit.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

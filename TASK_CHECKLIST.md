@@ -1,4 +1,4 @@
-# BudTrip - Task Checklist (Lab Session 1)
+# WorthIt - Task Checklist (Lab Session 1)
 
 ## 📌 Project Information
 - **Repository:** IT342_G5_CAONES_Lab1
@@ -10,21 +10,21 @@
 ## ✅ DONE
 
 ### Backend
-- [x] Setup Spring Boot Project - Commit: `86ce3f8`
-- [x] Database Configuration (MySQL) - Commit: `86ce3f8`
-- [x] User Entity & Repository - Commit: `86ce3f8`
-- [x] JWT Security Implementation - Commit: `86ce3f8`
-- [x] Authentication Endpoints (Register, Login, Get User) - Commit: `86ce3f8`
+- [x] Setup Spring Boot Project 
+- [x] Database Configuration (Supabase - PostgreSQL)
+- [x] User Entity & Repository
+- [x] JWT Security Implementation
+- [x] Authentication Endpoints (Register, Login, Get User)
 
 ### Web Application
-- [x] Setup React + Vite Project - Commit: `86ce3f8`
-- [x] Authentication Service & Context - Commit: `86ce3f8`
-- [x] Protected Route Component - Commit: `86ce3f8`
-- [x] **Register Page** - Commit: `86ce3f8`
-- [x] **Login Page** - Commit: `86ce3f8`
-- [x] **Dashboard/Profile Page** - Commit: `86ce3f8`
-- [x] **Logout Functionality** - Commit: `86ce3f8`
-- [x] React Router Setup - Commit: `86ce3f8`
+- [x] Setup React + Vite Project 
+- [x] Authentication Service & Context 
+- [x] Protected Route Component 
+- [x] **Register Page** 
+- [x] **Login Page** 
+- [x] **Dashboard/Profile Page** 
+- [x] **Logout Functionality** 
+- [x] React Router Setup 
 
 ---
 

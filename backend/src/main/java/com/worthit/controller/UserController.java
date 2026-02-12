@@ -1,7 +1,9 @@
-package com.budtrip.controller;
+package com.worthit.controller;
 
-import com.budtrip.dto.UserResponse;
-import com.budtrip.service.AuthService;
+import com.worthit.dto.UpdateBudgetRequest;
+import com.worthit.dto.UserResponse;
+import com.worthit.service.AuthService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -20,5 +22,14 @@ public class UserController {
         String username = authentication.getName();
         UserResponse user = authService.getCurrentUser(username);
         return ResponseEntity.ok(user);
+    }
+    
+    @PutMapping("/budget")
+    public ResponseEntity<UserResponse> updateMonthlyBudget(
+            Authentication authentication,
+            @Valid @RequestBody UpdateBudgetRequest request) {
+        String username = authentication.getName();
+        UserResponse updatedUser = authService.updateMonthlyBudget(username, request.getMonthlyBudget());
+        return ResponseEntity.ok(updatedUser);
     }
 }

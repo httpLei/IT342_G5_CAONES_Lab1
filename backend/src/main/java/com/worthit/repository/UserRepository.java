@@ -1,6 +1,6 @@
-package com.budtrip.repository;
+package com.worthit.repository;
 
-import com.budtrip.model.User;
+import com.worthit.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

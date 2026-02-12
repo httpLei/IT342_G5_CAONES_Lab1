@@ -1,11 +1,11 @@
-package com.budtrip;
+package com.worthit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BudTripApplication {
+public class WorthItApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BudTripApplication.class, args);
+        SpringApplication.run(WorthItApplication.class, args);
     }
 }

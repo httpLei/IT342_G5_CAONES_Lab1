@@ -1,10 +1,10 @@
-package com.budtrip.controller;
+package com.worthit.controller;
 
-import com.budtrip.dto.AuthResponse;
-import com.budtrip.dto.LoginRequest;
-import com.budtrip.dto.MessageResponse;
-import com.budtrip.dto.RegisterRequest;
-import com.budtrip.service.AuthService;
+import com.worthit.dto.AuthResponse;
+import com.worthit.dto.LoginRequest;
+import com.worthit.dto.MessageResponse;
+import com.worthit.dto.RegisterRequest;
+import com.worthit.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

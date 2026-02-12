@@ -1,4 +1,4 @@
-# BudTrip Backend - Setup Guide
+# WorthIt Backend - Setup Guide
 
 ## Prerequisites
 - Java JDK 17 or higher
@@ -28,13 +28,13 @@ Download and install from [MySQL](https://dev.mysql.com/downloads/mysql/)
 
 ### 4. Create Database
 ```sql
-CREATE DATABASE budtrip_db;
+CREATE DATABASE worthit_db;
 ```
 
 ### 5. Configure Application
 Edit `src/main/resources/application.properties`:
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/budtrip_db?createDatabaseIfNotExist=true
+spring.datasource.url=jdbc:mysql://localhost:3306/worthit_db?createDatabaseIfNotExist=true
 spring.datasource.username=YOUR_MYSQL_USERNAME
 spring.datasource.password=YOUR_MYSQL_PASSWORD
 ```
@@ -110,8 +110,8 @@ mvn install -U
 ## Project Structure
 ```
 backend/
-├── src/main/java/com/budtrip/
-│   ├── BudTripApplication.java    # Main application
+├── src/main/java/com/worthit/
+│   ├── WorthItApplication.java    # Main application
 │   ├── config/
 │   │   └── SecurityConfig.java    # Security configuration
 │   ├── controller/

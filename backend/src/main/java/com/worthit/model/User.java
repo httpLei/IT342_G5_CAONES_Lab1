@@ -1,4 +1,4 @@
-package com.budtrip.model;
+package com.worthit.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -34,6 +34,9 @@ public class User {
     
     @Column(nullable = false)
     private String role = "USER";
+    
+    @Column(name = "monthly_budget")
+    private Double monthlyBudget = 0.0;
     
     @CreationTimestamp
     @Column(name = "created_at", updatable = false)

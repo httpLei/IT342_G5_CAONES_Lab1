@@ -1,7 +1,7 @@
-package com.budtrip.security;
+package com.worthit.security;
 
-import com.budtrip.model.User;
-import com.budtrip.repository.UserRepository;
+import com.worthit.model.User;
+import com.worthit.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

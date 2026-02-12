@@ -76,7 +76,7 @@ curl -X GET http://localhost:8080/api/user/me \
 ### Import Collection
 1. Open Postman
 2. Click "Import" button
-3. Select `BudTrip_API_Collection.postman_collection.json`
+3. Select `WorthIt_API_Collection.postman_collection.json`
 4. Collection will be imported with all endpoints
 
 ### Using the Collection
@@ -263,7 +263,7 @@ Save as `test-api.sh` (Linux/Mac) or `test-api.ps1` (Windows):
 ```bash
 #!/bin/bash
 
-echo "Testing BudTrip API..."
+echo "Testing WorthIt API..."
 echo ""
 
 # Test Registration
@@ -299,7 +299,7 @@ echo "All tests completed!"
 
 ### PowerShell Script (test-api.ps1)
 ```powershell
-Write-Host "Testing BudTrip API..." -ForegroundColor Cyan
+Write-Host "Testing WorthIt API..." -ForegroundColor Cyan
 Write-Host ""
 
 # Test Registration
@@ -376,7 +376,7 @@ Write-Host "All tests completed!" -ForegroundColor Green
 After testing registration, verify in MySQL:
 
 ```sql
-USE budtrip_db;
+USE worthit_db;
 
 -- Show all users
 SELECT 
