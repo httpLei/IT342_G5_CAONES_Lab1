@@ -1,43 +1,37 @@
 package com.app.worthit
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        // Check if the user is logged in using SharedPreferences
-        val sharedPref = getSharedPreferences("WorthItPrefs", MODE_PRIVATE)
-        val isLoggedIn = sharedPref.getBoolean("isLoggedIn", false)
+        val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        if (!isLoggedIn) {
-            // If not logged in, send them to the Login screen
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish() // Prevent them from coming back to this screen
-            return
-        }
-
-        val logoutBtn = findViewById<Button>(R.id.btnLogout)
-        logoutBtn.setOnClickListener {
-            val sharedPref = getSharedPreferences("WorthItPrefs", MODE_PRIVATE)
-            with(sharedPref.edit()) {
-                clear() // This removes the "isLoggedIn" status and any saved tokens
-                apply()
+        navView.setOnItemSelectedListener { item ->
+            var selectedFragment: Fragment = DashboardFragment()
+            when (item.itemId) {
+                R.id.navigation_dashboard -> {
+                    selectedFragment = DashboardFragment()
+                }
+                R.id.navigation_profile -> {
+                    selectedFragment = ProfileFragment()
+                }
+                R.id.navigation_settings -> {
+                    selectedFragment = SettingsFragment()
+                }
             }
-
-            Toast.makeText(this, "Logged out successfully", Toast.LENGTH_SHORT).show()
-
-            // Redirect back to Login
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment).commit()
+            true
         }
 
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, DashboardFragment()).commit()
+        }
     }
 }
